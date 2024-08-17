@@ -1,0 +1,64 @@
+/* .character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 200px;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+} */
+
+@media (max-width: 768px) {
+  .character-card {
+    width: 90%;
+  }
+
+  .character-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+.character-card {
+  background: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent background */
+  color: white; /* Ensure text is readable */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.character-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.character-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
